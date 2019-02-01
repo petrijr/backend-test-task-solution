@@ -41,10 +41,11 @@ There is also a half-baked `Simulator` object that you should finish.
 
 ### Final Remarks
 
-- The timestamps in the two files cover a range of about 7 days worth of timestamps. The program should simulate time 
-passing faster, so that the events are processed as fast as possible.
+- The timestamps in the two files cover a range of about 7 days worth of timestamps. The program should have a 
+configurable speedup to simulate time passing faster and should work correctly with any reasonable speedup factor.
+- The program must stream input events and not read all of them into memory at once.
 - Extra credit if the software is resilient to crashes - meaning that if it is interrupted at any point during 
-processing, it will continue from where it left off. reprocessing as little messages as possible, but it most not miss 
+processing, it will continue from where it left off, reprocessing as little messages as possible, but it must not miss 
 or duplicate any notifications due to crash/restart.
 - You are also free to use any databases or libraries or any other components, as long as they are freely available for 
 us to install for testing.
